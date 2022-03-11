@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<Html lang="pt-br">
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Treinando o que estudei.">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <title>Desafio</title>
+
+  <style>
+    * {
+      margin: 0px;
+    }
+
+    body {
+      width: 100%;
+      margin: auto;
+      background-image: radial-gradient(rgb(247, 241, 241), rgb(204, 196, 196));
+    }
+
+    .content {
+      margin: auto;
+      width: 80%;
+    }
+
+    h1 {
+      color: red;
+      background: white;
+      font-size: 60px;
+      padding: 20px;
+      text-align: center;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    h4 {
+      font-size: 22px;
+    }
+
+    select {
+      font-size: 15px;
+      padding: 8px;
+    }
+
+    option {
+      color: black;
+      padding: 10px;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+
+    .menu {
+      background: #000000;
+      position: inherit;
+      display: flex;
+      padding: 20px;
+      width: 100%;
+      justify-content: center;
+      padding: 10px 0px 10px 0px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 35px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .circulo {
+      border: solid 1px black;
+      border-radius: 40%;
+      padding: 10px;
+      margin-left: 70px;
+      text-decoration: none;
+    }
+
+    .rodape {
+      background: black;
+      padding: 50x;
+    }
+
+
+    .borda {
+      border: black solid 1px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .alinhar {
+      text-align: center;
+    }
+
+    .cor {
+      padding: 15px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu content">
+    <ul class="menu">
+      <!--Para estudar eu fiz algumas páginas para treinar, caso queiram ver essas páginas, no meu linkedin têm vídeos e no meu github os arquivos.-->
+      <li>
+        <a href=" https://github.com/Suellen-Kathlen" target="_blank">Github</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/suellen-kathlen-teixeira-741562224/" target="_blank">Linkedin</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/suellenkathlen.teixeira" target="_blank">Facebook</a>
+      </li>
+    </ul>
+
+
+  </div>
+
+
+  <div class="content">
+
+    <h1>Hello, guys! Let's do another page to train!</h1>
+    <br><br>
+    <h2>Caso não tenha gostado desse fundo...</h2>
+    <button style="font-size: 20px;" onclick="eventoclick()">Clique aqui.</button>
+
+    <br><br><br>
+
+  </div>
+
+  <div class="content">
+    <h3 class="borda">
+      I really need to train to improve my skills.
+    </h3><br>
+  </div>
+  <hr>
+
+  <div class="content">
+    <table width="40%" border="1" class="tabela">
+      <br>
+      <h3>Cursos que fiz:</h3>
+
+      <tr>
+        <th>Matéria</th>
+        <th>Horas</th>
+        <th>Professor</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>4 horas</td>
+        <td>Dimitri Teixeira</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>6 horas</td>
+        <td>Dimitri Teixeira</td>
+      </tr>
+
+    </table>
+  </div>
+  <br>
+
+
+  <hr>
+
+
+  <br>
+  <div id="teste" onmouseover="mudaDeCor()" class=" content cor">
+    <h4>
+      Quais os próximos passo?
+      <ul>
+        <li>Comecei esta semana a estudar JavaScript como podem notar.</li>
+        <li>Pretendo começar a estudar bootstrap.</li>
+        <li>Fazer novas revisões através de treinos.</li>
+        <li>Estudar psicologia das cores</li>
+      </ul>
+    </h4>
+    <br>
+    <blockquote style="font-size: 1.5rem">
+      Someone have a tip to me be better quickly?
+      <strong>
+        In JavaScript!
+      </strong>      
+      <i>
+        I know, I know, I need to improve my English as well.
+      </i>
+      But I can't do everything in the same time, so...
+      <br>
+      Babysteps!
+      <br>
+      At less I know, what I need to do to be better. I can't stop, because if I do that I will never get a chance.
+    </blockquote>
+  </div>
+
+
+
+  <br>
+  <hr>
+  <br><br>
+  <div class="content alinhar">
+    <h3>Eu tenho feito cursos atualizados pelo canal <strong>Programação Web</strong></h3>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EAOg2wImvkc" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <br><br>
+  <hr><br>
+
+  <div class="content">
+    <h3>O que farei no final de semana?</h3><br>
+
+    <select onchange="mudou()" id="itens">
+      <option value="1">Estudar teoria</option>
+      <option value="2">Revisar o conteúdo</option>
+      <option value="3">Praticar</option>
+      <option value="4">Descansar</option>
+    </select>
+  </div>
+
+
+  <br><br>
+  <div class="content">
+    <h2>Contato</h2><br>
+    <form>
+      <label for="campo_nome">Nome:</label>
+      <input id="campo_nome" type="text" placeholder="Digite seu nome">
+      <br><br>
+      <label for="campo_email">E-mail:</label>
+      <input id="Campo_email" type="text" placeholder="Digite seu e-mail">
+      <br><br>
+      <label for="campo_mensagem">Mensagem:</label>
+      <input id="Campo_mensagem" type="text" placeholder="Digite sua mensagem">
+      <br><br><br>
+
+      <a class="circulo" href="#">Enviar</a>
+
+    </form>
+    <br><br>
+  </div>
+
+
+  <hr>
+
+  <footer class="rodape"> <br><br><br><br>
+  </footer>
+
+
+
+
+  <script>
+
+
+    var hora = new Date().getHours();
+
+    if (hora < 12) {
+      alert('Bom dia!');
+    } else if (hora < 18) {
+      alert('Boa tarde!');
+    } else {
+      alert('Boa noite!');
+    }
+
+    function eventoclick() {
+      document.body.style.background = "yellow";
+    }
+
+    function mudaDeCor() {
+      let div = document.getElementById("teste");
+      div.style.background = ("white");
+    }
+    function mudou() {
+      console.log('Mudou')
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>
